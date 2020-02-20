@@ -7,6 +7,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
+      - name: install composer
+        run:  composer install
       - name: Run test unit
         run: bin/phpunit tests/Unit
       - name: Run test Intégration

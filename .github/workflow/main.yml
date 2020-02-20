@@ -1,2 +1,9 @@
 name: workflow ci20-4
 on: push
+jobs:
+  build:
+    name: main ci20-4
+    runs-on: ubuntu-latest
+  job1:
+    steps:
+      -run: echo "Hello world"
